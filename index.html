@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8" />
+	    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<title>Registration Form</title>
+		<link rel="stylesheet" type="text/css" href="form.css">
+	</head>
+	<body>
+		<header>
+	    	<h1 id="title">Bearskin Survey</h1>
+			<p id="description">— Only for the choosen few</p>
+		</header>
+		<main>
+			<form id="survey-form">
+				<fieldset>
+				<label for="name" id="name-label">Name:</label>
+				<input id="name" type="text" required placeholder="Enter your Name">
+				 
+				<label for="email" id="email-label">Email:</label>
+			    <input id="email" type="email" required placeholder="Enter your Email">
+				
+				<label for="number" id="number-label">Age:</label>
+				<input id="number" type="number" min="13" max="100" required placeholder="Enter your Age">
+				</fieldset>
+				
+				<fieldset>
+				<label for="dropdown">Best Collaboration of Bearskin so far?</label>
+				<select id="dropdown">
+					<option>Vendetta</option>
+					<option>Enimal</option>
+					<option>Undrafted</option>
+					<option>Others</option>
+				</select>
+				</fieldset>
+		<!--RADIO-->
+				<fieldset>	
+				<label>Would you recommend Bearskin to other people?</label>
+				<input type="radio" name="recommend" id="definitely" value="5">
+				<label for="definitely">Definitely</label>
+				<br>
+				<input type="radio" name="recommend" id="maybe" value="3">
+				<label for="maybe">Maybe</label>
+				<br>
+		        <input type="radio" name="recommend" id="no" value="10">
+		        <label for="no">No, Only for the choosen few</label>
+				</fieldset>
+		<!--CHECKBOX-->
+				
+			<div id="merch">
+				<label>What type of Merch do you have?</label>
+			<br>
+				<input type="checkbox" id="shirt" value="1">
+				<label for="shirt">Shirt</label>
+			<br>
+				<input type="checkbox" id="short" value="2">
+				<label for="short">Short</label>
+			<br>
+				<input type="checkbox" id="hoodie" value="3">
+				<label for="hoodie">Hoodie</label>
+			<br>
+				<input type="checkbox" id="longsleeve" value="4">
+				<label for="longsleeve">Longsleeve</label>
+			<br>
+				<input type="checkbox" id="windbreaker" value="5">
+				<label for="windbreaker">Windbreaker</label>
+			<br>
+				<input type="checkbox" id="shoes" value="10">
+				<label for="shoes">Shoes</label>
+			<br>	
+				<input type="checkbox" id="other" value="8">
+				<label for="other">Others</label>
+			</div>
+				
+				<fieldset>
+					<textarea placeholder="Suggestion about what location of first flagship store of bearskin"></textarea>
+				<br>
+					<div class="container">
+						<input type="submit">
+					</div>
+				</fieldset>
+				
+				<footer>
+				 <p class="copy"> Copyright &copy; 2022 Bearskin Everything</p>
+				 <p>Allright Reserved</p>
+				</footer>
+			</form>
+		</main>
+	</body>
+</html>
